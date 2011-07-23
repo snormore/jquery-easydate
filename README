@@ -1,0 +1,15 @@
+jQuery EasyDate Plugin
+----
+
+EasyDate is a jQuery plugin to format dates into a human-readable form and continuously update them to stay accurate while the user remains on the page. The plugin will parse a RFC 1123 valid timestamp from a DOM element's title attribute or innerHTML property and format it into a human-readable form (e.g., "2 weeks ago").
+
+This is a fork of the original EasyDate plugin located here http://easydate.parshap.com/ which did not support jQuery 1.6 and possibly others above 1.4.2. Support was added with a hack to use actual element ID attribute to ensure uniqueness.
+
+
+Authors
+----
+
+Original plugin developed by Parsha Pourkhomami parshap+easydate@gmail.com
+
+This version developed by Steven Normore snormore@gmail.com
+
