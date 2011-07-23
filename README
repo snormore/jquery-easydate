@@ -6,6 +6,20 @@ EasyDate is a jQuery plugin to format dates into a human-readable form and conti
 This is a fork of the original EasyDate plugin located here http://easydate.parshap.com/ which did not support jQuery 1.6 and possibly others above 1.4.2. Support was added with a hack to use actual element ID attribute to ensure uniqueness.
 
 
+TODO
+----
+
+- Add some sample/demo pages showing simple use cases.
+
+- Update so that when a live .easydate element does not have an ID, generate a random/unique ID to use and assign. The current workaround requires each live .easydate to have a unique id attribute in order to ensure updates occur only once. This was the breaking point from the originally supported jQuery 1.4.2.
+
+
+License
+----
+
+http://www.opensource.org/licenses/mit-license.php
+
+
 Authors
 ----
 
