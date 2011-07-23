@@ -1,6 +1,11 @@
 (function($)
 {
     /*
+     * jQuery EasyDate 0.2.5
+     * Copyright (c) 2011 Steven Normore (snormore@gmail.com)
+     * Licensed under the MIT license.
+    */
+    /*
      * jQuery EasyDate 0.2.4 ($Rev: 54 $)
      * Copyright (c) 2009 Parsha Pourkhomami (parshap@gmail.com)
      * Licensed under the MIT license.
@@ -77,6 +82,14 @@
             str = str + "s";
         return settings.locale[str] || str;
     }
+
+    // Return the unique element ID associated with this element.
+    // This is used to ensure multiple update timers aren't 
+    // running for the same element.
+    function get_element_id(e) {
+    	return $(e).attr('id');
+    }
+    
     
     // Pauses live updates of elements matching the given selector. If the
     // selector argument is omitted then all updating will be paused.
@@ -132,10 +145,6 @@
             });
         }
     };
-    
-    function get_element_id(e) {
-    	return $(e).attr('id');
-    }
     
     // Makes all future time calculations relative to the given date argument
     // instead of the system clock. The date argument can be a JavaScript Date
