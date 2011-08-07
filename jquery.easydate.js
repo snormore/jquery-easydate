@@ -323,6 +323,12 @@
     function update_time(element)
     {
         var settings = element.data("easydate.settings");
+
+        // Handle the case where the element may have been removed from the 
+        // DOM.
+        if (!settings) {
+            return;
+        }
         
         //var element_id = $.data(element[0]);
         var element_id = get_element_id(this);
